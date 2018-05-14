@@ -14,19 +14,19 @@ class Age extends \Twig_Extension
 		}
 
 		$age = $time->diff(new \DateTime())->format('%Y');
-		
+
 		return $age;
 	}
-	
+
 	public function getFilters()
-    {
-        return array(
-            new \Twig_SimpleFilter('age', [$this, 'age']),
+	{
+		return array(
+			new \Twig_SimpleFilter('age', [$this, 'age']),
 		);
-    }
+	}
 
     public function getName()
-    {
-        return 'age_extension';
-    }
+	{
+		return 'age_extension';
+	}
 }
