@@ -1,0 +1,26 @@
+{
+	"name": "progest/twig-extension-age",
+	"description": "Twig extension to calculate age from date",
+	"keywords": ["twig", "age", "date", "DateTime"],
+	"require": {
+		"twig/twig": ">=2.4",
+		"php": ">=7.0"
+	},
+	"license": "MIT",
+	"homepage": "https://github.com/ProGestSA/twig-extension-age",
+	"support": {
+		"issues": "https://github.com/ProGestSA/twig-extension-age/issues",
+		"source": "https://github.com/ProGestSA/twig-extension-age"
+	},
+	"authors": [
+		{
+			"name": "ProGest SA",
+			"email": "info@progest.ch"
+		}
+	],
+	"autoload": {
+		"psr-0": {
+			"ProGest\\Twig": "src/"
+		}
+	}
+}
