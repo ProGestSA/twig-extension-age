@@ -1,6 +1,6 @@
 <?php
 
-namespace ProGest\Twig;
+namespace ProGest;
 
 class AgeExtension extends \Twig_Extension
 {
