@@ -5,7 +5,7 @@ namespace ProGest\Twig;
 class AgeExtension extends \Twig_Extension
 {
 	public function age($time)
-    {
+	{
 		if (!($time instanceof \DateTime))
 		{
 			$timestamp = strtotime($time);
@@ -25,7 +25,7 @@ class AgeExtension extends \Twig_Extension
 		);
 	}
 
-    public function getName()
+	public function getName()
 	{
 		return 'age_extension';
 	}
