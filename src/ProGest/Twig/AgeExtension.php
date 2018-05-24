@@ -15,7 +15,7 @@ class AgeExtension extends \Twig_Extension
 
 		$age = $time->diff(new \DateTime())->format('%Y');
 
-		return $age;
+		return (int)$age;
 	}
 
 	public function getFilters()
