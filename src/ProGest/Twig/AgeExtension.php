@@ -13,7 +13,11 @@ class AgeExtension extends \Twig_Extension
 			$time->setTimestamp($timestamp);
 		}
 
-		$age = $time->diff(new \DateTime())->format('%Y');
+		$now = new \DateTime();
+		$now->setTime(0, 0, 0);
+		$now->setDate(date('Y'), date('m'), date('d'));
+
+		$age = $time->diff($now)->format('%Y');
 
 		return (int)$age;
 	}
