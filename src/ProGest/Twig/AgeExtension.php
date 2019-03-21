@@ -2,7 +2,7 @@
 
 namespace ProGest\Twig;
 
-class AgeExtension extends \Twig_Extension
+class AgeExtension extends \Twig\Extension\AbstractExtension
 {
 	public function age($time)
 	{
