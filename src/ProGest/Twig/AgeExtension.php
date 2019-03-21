@@ -25,7 +25,7 @@ class AgeExtension extends \Twig\Extension\AbstractExtension
 	public function getFilters()
 	{
 		return array(
-			new \Twig_SimpleFilter('age', [$this, 'age']),
+			new \Twig\TwigFilter('age', [$this, 'age']),
 		);
 	}
 
